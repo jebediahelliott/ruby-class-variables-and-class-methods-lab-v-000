@@ -31,6 +31,7 @@ class Song
     @@genres.each do |genre|
       if !genre_histo.key?(genre)
         genre_histo[genre] = @@genres.count(genre)
+        binding.pry
       end
       return genre_histo
     end
