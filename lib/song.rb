@@ -29,7 +29,7 @@ class Song
   def self.genre_count
     genre_histo = {}
     @@genres.each do |genre|
-      if !genre_histo.key?(genre)
+      if genre_histo.key?(genre) != true
         genre_histo[genre] = @@genres.count(genre)
       end
     end
