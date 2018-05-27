@@ -36,4 +36,14 @@ class Song
     end
     return genre_histo
   end
+
+  def self.artist_count
+    arist_histo = {}
+    @@artists.each do |artist|
+      if !arist_histo.key?(genre)
+        arist_histo[artist] = @@artists.count(artist)
+      end
+    end
+    return arist_histo
+  end
 end
