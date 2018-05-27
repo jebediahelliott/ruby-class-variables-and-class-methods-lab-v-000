@@ -8,7 +8,7 @@ class Song
     @@artists << artist
   end
 
-  attr_accessor :naem, :artist, :genre
+  attr_accessor :name, :artist, :genre
 
   @@count = 0
   @@genres = []
